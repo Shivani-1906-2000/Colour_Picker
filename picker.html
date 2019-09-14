@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Select a colour you wanna pick: <input type="color" id="colour">
+    <br>
+    <button onclick="show()">Click here to see the value</button>
+    <br>
+    <p id="showhere"></p>
+</body>
+<script>
+function show(){
+    var grabcolor=document.getElementById("colour").value;
+    document.getElementById("showhere").innerHTML=grabcolor;
+}
+</script>
+</html>
